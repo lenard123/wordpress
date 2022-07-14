@@ -1,5 +1,8 @@
 <?php
 
+$_SERVER["HTTP_HOST"] = $_SERVER["HTTP_X_FORWARDED_HOST"];
+$_SERVER["HTTPS"] = "on";
+
 /**
  * Retrieves and creates the wp-config.php file.
  *

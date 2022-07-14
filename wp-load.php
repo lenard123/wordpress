@@ -1,4 +1,8 @@
 <?php
+
+$_SERVER["HTTP_HOST"] = $_SERVER["HTTP_X_FORWARDED_HOST"];
+$_SERVER["HTTPS"] = "on";
+
 /**
  * Bootstrap file for setting the ABSPATH constant
  * and loading the wp-config.php file. The wp-config.php
